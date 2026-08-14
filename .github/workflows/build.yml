@@ -54,12 +54,20 @@ jobs:
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
         run: ./gradlew assembleRelease
 
+      # Purely informational, so it must never be able to fail the build and skip the
+      # release: the apksigner path varies by runner image and grep exits 1 on no match.
       - name: Report the signing certificate
+        continue-on-error: true
         run: |
           echo "Signed with: $SIGNED_WITH" >> "$GITHUB_STEP_SUMMARY"
-          "$ANDROID_HOME"/build-tools/*/apksigner verify --print-certs \
-            app/build/outputs/apk/release/app-release.apk \
-            | grep -i "SHA-256 digest" >> "$GITHUB_STEP_SUMMARY"
+          APKSIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -1)
+          if [ -n "$APKSIGNER" ]; then
+            "$APKSIGNER" verify --print-certs \
+              app/build/outputs/apk/release/app-release.apk \
+              | grep -i "SHA-256 digest" >> "$GITHUB_STEP_SUMMARY" || true
+          else
+            echo "apksigner not found on this runner." >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Name the APK after its version
         id: rename
