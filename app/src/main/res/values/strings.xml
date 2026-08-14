@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Today\'s Quote</string>
+    <string name="widget_description">A quote that changes every day. Nine skins, your own quotes, no noise.</string>
+    <string name="widget_empty">Add a quote, or widen this widget\'s filter.</string>
+    <string name="widget_sample_quote">Waste no more time arguing what a good man should be. Be one.</string>
+    <string name="widget_sample_author">MARCUS AURELIUS</string>
+    <string name="shuffle">Show another quote</string>
+    <string name="notification_channel">Daily quote</string>
+    <string name="notification_channel_desc">One quote a day, at the time you choose.</string>
+</resources>
