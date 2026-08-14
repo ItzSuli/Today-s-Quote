@@ -3,7 +3,7 @@
 An Android home-screen widget that shows one quote a day — and only one. No feed, no
 streaks, no account, no network. You open your phone, you read one line, you get on with it.
 
-It ships with 161 curated quotes, takes as many of your own as you want to add, and comes
+It ships with 193 curated quotes, takes as many of your own as you want to add, and comes
 with nine widget skins. The default, **Dark Glass**, is a smoked translucent panel with a
 hairline edge, built to sit on a dark wallpaper without shouting.
 
@@ -82,8 +82,9 @@ on the widget does (open the app, shuffle, or nothing).
 ## Choosing what appears
 
 A widget can draw from everything, the built-in quotes only, your own quotes only, or your
-favourites only — and on top of that you can restrict it to any mix of ten themes:
-Discipline, Adversity, Solitude, Mortality, Power, Strategy, Truth, Mind, Craft and Freedom.
+favourites only — and on top of that you can restrict it to any mix of eleven themes:
+Discipline, Adversity, Solitude, Mortality, Power, Strategy, Revolution, Truth, Mind, Craft
+and Freedom.
 
 If a filter ends up matching nothing, the widget quietly widens it rather than going blank.
 
@@ -182,7 +183,7 @@ and the in-app preview renders those same drawables so the two can't drift apart
 
 The built-in set was chosen for weight rather than popularity — Marcus Aurelius, Seneca,
 Epictetus, Nietzsche, Kafka, Camus, Rilke, Baldwin, Jung, Sun Tzu, Musashi, Clausewitz,
-Thucydides, Gracián, Bukowski,
+Thucydides, Gracián, Bukowski, Che Guevara, Sankara, Fanon, Luxemburg, Biko,
 Le Guin, Morrison, Dostoevsky and others. Poster-slogan material and lines worn smooth by
 overuse were deliberately left out, as was anything whose attribution wouldn't survive
 checking. Where a quote is a well-known translation or a condensed passage, the wording

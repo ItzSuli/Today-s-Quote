@@ -26,6 +26,7 @@ enum class Category(val label: String) {
     MORTALITY("Mortality"),
     POWER("Power"),
     STRATEGY("Strategy"),
+    REVOLUTION("Revolution"),
     TRUTH("Truth"),
     MIND("Mind"),
     CRAFT("Craft"),

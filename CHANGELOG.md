@@ -4,6 +4,16 @@ All notable changes to Today's Quote are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] — 2026-08-14
+
+### Added
+
+- **A Revolution category, and 32 quotes to fill it.** Che Guevara leads, alongside Fidel
+  Castro, Thomas Sankara, Frantz Fanon, Rosa Luxemburg, Emma Goldman, Fred Hampton, Assata
+  Shakur, Angela Davis, Steve Biko, Marcus Garvey, Kwame Nkrumah, Malcolm X, Mandela, Zapata,
+  Bhagat Singh, Bose, Ho Chi Minh, Lumumba, Toussaint Louverture, Thomas Paine, Danton and
+  Mao. The library is now 193 quotes across eleven themes.
+
 ## [1.1.0] — 2026-08-14
 
 ### Added
@@ -86,6 +96,7 @@ Initial release. **Withdrawn — crashes on launch, see 1.0.1.**
 - Backup: export your quotes as JSON, import JSON back, or paste plain
   `The quote itself — Author` lines.
 
+[1.2.0]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.2.0
 [1.1.0]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.1.0
 [1.0.2]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.2
 [1.0.1]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.1

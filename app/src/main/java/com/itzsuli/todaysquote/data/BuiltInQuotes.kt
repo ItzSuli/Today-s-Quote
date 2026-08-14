@@ -7,6 +7,7 @@ import com.itzsuli.todaysquote.data.Category.FREEDOM
 import com.itzsuli.todaysquote.data.Category.MIND
 import com.itzsuli.todaysquote.data.Category.MORTALITY
 import com.itzsuli.todaysquote.data.Category.POWER
+import com.itzsuli.todaysquote.data.Category.REVOLUTION
 import com.itzsuli.todaysquote.data.Category.SOLITUDE
 import com.itzsuli.todaysquote.data.Category.STRATEGY
 import com.itzsuli.todaysquote.data.Category.TRUTH
@@ -202,7 +203,42 @@ object BuiltInQuotes {
         q("Do not act following customary beliefs.", "Miyamoto Musashi", FREEDOM),
         q("You must understand that there is more than one path to the top of the mountain.", "Miyamoto Musashi", MIND),
         q("Matters of small concern should be treated seriously.", "Yamamoto Tsunetomo", DISCIPLINE),
-        q("Never tell people how to do things. Tell them what to do and they will surprise you with their ingenuity.", "George S. Patton", CRAFT)
+        q("Never tell people how to do things. Tell them what to do and they will surprise you with their ingenuity.", "George S. Patton", CRAFT),
+
+        // ---------------------------------------------------------------- Revolution
+        // People who tried to overturn an order, and what it cost them to try.
+        q("I am not a liberator. Liberators do not exist. The people liberate themselves.", "Che Guevara", REVOLUTION),
+        q("At the risk of seeming ridiculous, let me say that the true revolutionary is guided by great feelings of love.", "Che Guevara", REVOLUTION),
+        q("Silence is argument carried out by other means.", "Che Guevara", POWER),
+        q("If you tremble with indignation at every injustice, then you are a comrade of mine.", "Che Guevara", REVOLUTION),
+        q("The revolution is not an apple that falls when it is ripe. You have to make it fall.", "Che Guevara", REVOLUTION),
+        q("I know you have come to kill me. Shoot, coward, you are only going to kill a man.", "Che Guevara", MORTALITY),
+        q("Condemn me, it does not matter: history will absolve me.", "Fidel Castro", REVOLUTION),
+        q("He who feeds you, controls you.", "Thomas Sankara", POWER),
+        q("While revolutionaries as individuals can be murdered, you cannot kill ideas.", "Thomas Sankara", REVOLUTION),
+        q("You cannot carry out fundamental change without a certain amount of madness.", "Thomas Sankara", REVOLUTION),
+        q("Each generation must, out of relative obscurity, discover its mission, fulfil it or betray it.", "Frantz Fanon", REVOLUTION),
+        q("Freedom is always the freedom of the one who thinks differently.", "Rosa Luxemburg", FREEDOM),
+        q("The most violent element in society is ignorance.", "Emma Goldman", TRUTH),
+        q("You can jail a revolutionary, but you can't jail the revolution.", "Fred Hampton", REVOLUTION),
+        q("Nobody in the world, nobody in history, has ever gotten their freedom by appealing to the moral sense of the people who were oppressing them.", "Assata Shakur", REVOLUTION),
+        q("I am no longer accepting the things I cannot change. I am changing the things I cannot accept.", "Angela Davis", REVOLUTION),
+        q("The most potent weapon in the hands of the oppressor is the mind of the oppressed.", "Steve Biko", POWER),
+        q("A people without the knowledge of their past history, origin and culture is like a tree without roots.", "Marcus Garvey", TRUTH),
+        q("We prefer self-government with danger to servitude in tranquillity.", "Kwame Nkrumah", FREEDOM),
+        q("You can't separate peace from freedom, because no one can be at peace unless he has his freedom.", "Malcolm X", FREEDOM),
+        q("I learned that courage was not the absence of fear, but the triumph over it.", "Nelson Mandela", ADVERSITY),
+        q("It is better to die on your feet than to live on your knees.", "Emiliano Zapata", REVOLUTION),
+        q("Give me blood, and I shall give you freedom.", "Subhas Chandra Bose", REVOLUTION),
+        q("It is easy to kill individuals, but you cannot kill the ideas.", "Bhagat Singh", REVOLUTION),
+        q("Nothing is more precious than independence and freedom.", "Ho Chi Minh", FREEDOM),
+        q("History will one day have its say. Africa will write its own history.", "Patrice Lumumba", REVOLUTION),
+        q("In overthrowing me, you have cut down only the trunk of the tree of liberty; it will spring up again by the roots, for they are numerous and deep.", "Toussaint Louverture", REVOLUTION),
+        q("These are the times that try men's souls.", "Thomas Paine", ADVERSITY),
+        q("The harder the conflict, the more glorious the triumph.", "Thomas Paine", ADVERSITY),
+        q("Boldness, more boldness, and always boldness.", "Georges Danton", REVOLUTION),
+        q("A revolution is not a dinner party.", "Mao Zedong", REVOLUTION),
+        q("Political power grows out of the barrel of a gun.", "Mao Zedong", POWER)
     )
 
     /** Fast lookup used when resolving ids stored in widget settings or favourites. */
