@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from one template per font so the three variants never drift apart. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/widget_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/widget_bg_dark_glass"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:id="@+id/widget_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/widget_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:lineSpacingMultiplier="1.22"
+            android:maxLines="12"
+            android:ellipsize="end"
+            android:textColor="#FFF2F4F8"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:textSize="18sp"
+            android:text="@string/widget_sample_quote" />
+
+        <LinearLayout
+            android:id="@+id/widget_author_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <View
+                android:id="@+id/widget_accent"
+                android:layout_width="16dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:background="#FF6E7C96" />
+
+            <TextView
+                android:id="@+id/widget_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.14"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FF9BA6BC"
+                android:textSize="11sp"
+                android:text="@string/widget_sample_author" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/widget_shuffle"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:alpha="0.5"
+        android:src="@drawable/ic_shuffle"
+        android:contentDescription="@string/shuffle" />
+</FrameLayout>
