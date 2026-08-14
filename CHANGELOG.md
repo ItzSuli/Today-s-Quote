@@ -4,6 +4,24 @@ All notable changes to Today's Quote are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] — 2026-08-14
+
+### Added
+
+- **A Strategy category, and 30 more quotes to fill it.** Nineteen are Sun Tzu, quoted from
+  Lionel Giles' translation of *The Art of War*, alongside Clausewitz, Thucydides, Vegetius,
+  more Musashi, Hagakure and Patton. The library is now 161 quotes across ten themes, and a
+  widget can be pointed at Strategy alone.
+- A test asserting every category has real quotes behind it, so a filter chip can never appear
+  that silently matches nothing.
+
+### Changed
+
+- Two Sun Tzu lines already in the library — "In the midst of chaos, there is also
+  opportunity" and "Opportunities multiply as they are seized" — are widely circulated but
+  appear nowhere in the standard translation. Both were replaced with passages that are
+  actually in the text.
+
 ## [1.0.2] — 2026-08-14
 
 ### Fixed
@@ -68,6 +86,7 @@ Initial release. **Withdrawn — crashes on launch, see 1.0.1.**
 - Backup: export your quotes as JSON, import JSON back, or paste plain
   `The quote itself — Author` lines.
 
+[1.1.0]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.1.0
 [1.0.2]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.2
 [1.0.1]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.1
 [1.0.0]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.0

@@ -8,6 +8,7 @@ import com.itzsuli.todaysquote.data.Category.MIND
 import com.itzsuli.todaysquote.data.Category.MORTALITY
 import com.itzsuli.todaysquote.data.Category.POWER
 import com.itzsuli.todaysquote.data.Category.SOLITUDE
+import com.itzsuli.todaysquote.data.Category.STRATEGY
 import com.itzsuli.todaysquote.data.Category.TRUTH
 
 /**
@@ -60,7 +61,7 @@ object BuiltInQuotes {
         q("Everything I've ever let go of has claw marks on it.", "David Foster Wallace", ADVERSITY),
         q("Life shrinks or expands in proportion to one's courage.", "Anaïs Nin", ADVERSITY),
         q("You forget what you want to remember, and you remember what you want to forget.", "Cormac McCarthy", ADVERSITY),
-        q("In the midst of chaos, there is also opportunity.", "Sun Tzu", ADVERSITY),
+        q("The good fighters of old first put themselves beyond the possibility of defeat, and then waited for an opportunity of defeating the enemy.", "Sun Tzu", ADVERSITY),
         q("The best revenge is not to be like your enemy.", "Marcus Aurelius", ADVERSITY),
 
         // ------------------------------------------------------------------ Solitude
@@ -95,7 +96,7 @@ object BuiltInQuotes {
         q("Keep the extent of your abilities unknown.", "Baltasar Gracián", POWER),
         q("Do not explain overmuch.", "Baltasar Gracián", POWER),
         q("Men judge generally more by the eye than by the hand, for everyone can see and few can feel.", "Niccolò Machiavelli", POWER),
-        q("Opportunities multiply as they are seized.", "Sun Tzu", POWER),
+        q("Regard your soldiers as your children, and they will follow you into the deepest valleys.", "Sun Tzu", POWER),
         q("When I dare to be powerful, to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.", "Audre Lorde", POWER),
         q("He who fights with monsters should look to it that he himself does not become a monster.", "Friedrich Nietzsche", POWER),
         q("Talent hits a target no one else can hit; genius hits a target no one else can see.", "Arthur Schopenhauer", POWER),
@@ -168,7 +169,40 @@ object BuiltInQuotes {
         q("What you do not want done to yourself, do not do to others.", "Confucius", TRUTH),
         q("Silence is a true friend who never betrays.", "Confucius", SOLITUDE),
         q("It is better to be feared than loved, if you cannot be both.", "Niccol\u00f2 Machiavelli", POWER),
-        q("Time is the substance I am made of.", "Jorge Luis Borges", MORTALITY)
+        q("Time is the substance I am made of.", "Jorge Luis Borges", MORTALITY),
+        // ------------------------------------------------------------------ Strategy
+        // Sun Tzu is quoted from the Lionel Giles translation of The Art of War, which is
+        // the standard English rendering; the popular lines absent from it are left out.
+        q("All warfare is based on deception.", "Sun Tzu", STRATEGY),
+        q("When we are able to attack, we must seem unable; when using our forces, we must seem inactive.", "Sun Tzu", STRATEGY),
+        q("Attack him where he is unprepared; appear where you are not expected.", "Sun Tzu", STRATEGY),
+        q("If you know the enemy and know yourself, you need not fear the result of a hundred battles.", "Sun Tzu", STRATEGY),
+        q("Supreme excellence consists in breaking the enemy\u0027s resistance without fighting.", "Sun Tzu", STRATEGY),
+        q("The clever combatant imposes his will on the enemy, but does not allow the enemy\u0027s will to be imposed on him.", "Sun Tzu", STRATEGY),
+        q("Water shapes its course according to the ground; the soldier works out his victory in relation to the foe he is facing.", "Sun Tzu", STRATEGY),
+        q("Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.", "Sun Tzu", STRATEGY),
+        q("To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself.", "Sun Tzu", STRATEGY),
+        q("He will win who knows when to fight and when not to fight.", "Sun Tzu", STRATEGY),
+        q("There is no instance of a country having benefited from prolonged warfare.", "Sun Tzu", STRATEGY),
+        q("Do not repeat the tactics which have gained you one victory, but let your methods be regulated by the infinite variety of circumstances.", "Sun Tzu", STRATEGY),
+        q("Energy may be likened to the bending of a crossbow; decision, to the releasing of the trigger.", "Sun Tzu", STRATEGY),
+        q("Move not unless you see an advantage; use not your troops unless there is something to be gained.", "Sun Tzu", STRATEGY),
+        q("Whoever is first in the field and awaits the coming of the enemy will be fresh for the fight.", "Sun Tzu", STRATEGY),
+        q("The general who advances without coveting fame and retreats without fearing disgrace is the jewel of the kingdom.", "Sun Tzu", STRATEGY),
+        q("Rapidity is the essence of war.", "Sun Tzu", STRATEGY),
+        q("Hold out baits to entice the enemy. Feign disorder, and crush him.", "Sun Tzu", STRATEGY),
+        q("The skilful fighter puts himself into a position which makes defeat impossible.", "Sun Tzu", STRATEGY),
+        q("Everything in war is very simple, but the simplest thing is difficult.", "Carl von Clausewitz", STRATEGY),
+        q("War is the realm of uncertainty; three quarters of the factors on which action is based are wrapped in a fog of greater or lesser uncertainty.", "Carl von Clausewitz", STRATEGY),
+        q("Let him who desires peace prepare for war.", "Vegetius", STRATEGY),
+        q("The strong do what they can and the weak suffer what they must.", "Thucydides", POWER),
+        q("The secret of happiness is freedom, and the secret of freedom is courage.", "Thucydides", FREEDOM),
+        q("You can only fight the way you practise.", "Miyamoto Musashi", DISCIPLINE),
+        q("Be detached from desire your whole life long.", "Miyamoto Musashi", DISCIPLINE),
+        q("Do not act following customary beliefs.", "Miyamoto Musashi", FREEDOM),
+        q("You must understand that there is more than one path to the top of the mountain.", "Miyamoto Musashi", MIND),
+        q("Matters of small concern should be treated seriously.", "Yamamoto Tsunetomo", DISCIPLINE),
+        q("Never tell people how to do things. Tell them what to do and they will surprise you with their ingenuity.", "George S. Patton", CRAFT)
     )
 
     /** Fast lookup used when resolving ids stored in widget settings or favourites. */

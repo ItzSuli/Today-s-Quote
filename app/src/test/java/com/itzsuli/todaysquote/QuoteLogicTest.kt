@@ -88,6 +88,15 @@ class QuoteLogicTest {
     }
 
     @Test
+    fun `every category has quotes behind it`() {
+        // An empty category would show as a filter chip that silently matches nothing.
+        com.itzsuli.todaysquote.data.Category.entries.forEach { category ->
+            val count = pool.count { it.category == category }
+            assertTrue("${category.label} has only $count quotes", count >= 5)
+        }
+    }
+
+    @Test
     fun `built-in library is well formed`() {
         assertTrue("library is too small", pool.size >= 120)
         assertEquals("duplicate ids", pool.size, pool.map { it.id }.toSet().size)
