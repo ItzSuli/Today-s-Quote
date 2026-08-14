@@ -11,10 +11,9 @@ hairline edge, built to sit on a dark wallpaper without shouting.
 
 ## Install it
 
-**Easiest route:** download **[`dist/todays-quote-1.0.0.apk`](dist/todays-quote-1.0.0.apk)**
-on your phone (open this page in your phone's browser, tap the file, then tap the download
-icon) and open the downloaded file. Android will ask you to allow installing from your
-browser — allow it, then tap *Install*.
+Grab the APK from **[Releases](../../releases/latest)** — open that page in your phone's
+browser, tap `app-release.apk` under *Assets*, and open it once it's downloaded. Android will
+ask you to allow installing from your browser; allow it, then tap *Install*.
 
 Requires Android 8.0 or newer. The app is signed with a personal key, not published on the
 Play Store, so Play Protect may show a "unknown app" notice the first time; tap
