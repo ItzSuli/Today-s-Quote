@@ -306,14 +306,12 @@ private fun ThemeSwatch(theme: WidgetTheme, selected: Boolean, onClick: () -> Un
             contentAlignment = Alignment.Center
         ) {
             if (!theme.bare) {
-                androidx.compose.foundation.Image(
-                    painter = androidx.compose.ui.res.painterResource(theme.background),
-                    contentDescription = null,
-                    contentScale = androidx.compose.ui.layout.ContentScale.FillBounds,
+                DrawableImage(
+                    resId = theme.background,
+                    alpha = 255,
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(4.dp)
-                        .clip(RoundedCornerShape(12.dp))
                 )
             }
             Text(

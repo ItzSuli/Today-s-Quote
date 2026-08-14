@@ -1,6 +1,5 @@
 package com.itzsuli.todaysquote.ui
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -15,9 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -55,11 +52,11 @@ fun WidgetPreview(
                 )
         ) {
             if (!settings.theme.bare) {
-                Image(
-                    painter = painterResource(settings.theme.background),
-                    contentDescription = null,
-                    contentScale = ContentScale.FillBounds,
-                    alpha = settings.opacity.coerceIn(0, 100) / 100f,
+                // Same drawable and same alpha maths as WidgetRenderer, so the preview and
+                // the real widget cannot disagree.
+                DrawableImage(
+                    resId = settings.theme.background,
+                    alpha = settings.opacity.coerceIn(0, 100) * 255 / 100,
                     modifier = Modifier.fillMaxSize()
                 )
             }

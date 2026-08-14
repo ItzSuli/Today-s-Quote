@@ -16,8 +16,10 @@ browser, tap `app-release.apk` under *Assets*, and open it once it's downloaded.
 ask you to allow installing from your browser; allow it, then tap *Install*.
 
 Requires Android 8.0 or newer. The app is signed with a personal key, not published on the
-Play Store, so Play Protect may show a "unknown app" notice the first time; tap
+Play Store, so Play Protect may show an "unknown app" notice the first time; tap
 *Install anyway*.
+
+Release notes for every version live in [CHANGELOG.md](CHANGELOG.md).
 
 > **Updating later:** as long as new APKs are signed with the same key, they install straight
 > over the top and your quotes, favourites and widget settings are kept. If you ever build
