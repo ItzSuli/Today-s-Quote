@@ -79,6 +79,29 @@ object WidgetRenderer {
         settings: WidgetSettings,
         quote: Quote?,
         options: Bundle?
+    ): RemoteViews = buildViews(
+        context = context,
+        widgetId = widgetId,
+        settings = settings,
+        quote = quote,
+        widthDp = options?.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH, 0)
+            ?.takeIf { it > 0 } ?: 250,
+        heightDp = options?.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT, 0)
+            ?.takeIf { it > 0 } ?: 110
+    )
+
+    /**
+     * Builds the widget's RemoteViews. Separated from the AppWidgetManager plumbing so tests
+     * can actually inflate the result — a RemoteViews only fails when the *launcher* applies
+     * it, so building one proves nothing on its own.
+     */
+    fun buildViews(
+        context: Context,
+        widgetId: Int,
+        settings: WidgetSettings,
+        quote: Quote?,
+        widthDp: Int,
+        heightDp: Int
     ): RemoteViews {
         val layout = when (settings.font) {
             WidgetFont.SANS -> R.layout.widget_quote_sans
@@ -87,11 +110,6 @@ object WidgetRenderer {
         }
         val views = RemoteViews(context.packageName, layout)
         val theme = settings.theme
-
-        val widthDp = options?.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH, 0)
-            ?.takeIf { it > 0 } ?: 250
-        val heightDp = options?.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT, 0)
-            ?.takeIf { it > 0 } ?: 110
 
         // ------------------------------------------------------------------ background
         if (theme.bare) {

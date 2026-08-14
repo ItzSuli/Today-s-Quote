@@ -4,6 +4,25 @@ All notable changes to Today's Quote are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] — 2026-08-14
+
+### Fixed
+
+- **Widgets could not be added to the home screen.** Dropping one left the cell reserved with
+  "couldn't create widget" in it. The author line's accent rule was a plain `<View>`, and
+  RemoteViews will only inflate view classes annotated `@RemoteView` — `android.view.View`
+  is not one, so the launcher rejected the entire layout with
+  `Class not allowed to be inflated android.view.View`. The rule is now an `ImageView`, which
+  looks identical and is permitted.
+
+### Added
+
+- Widget inflation tests that apply the real RemoteViews through the framework's own
+  `apply()`, across every skin, typeface, alignment, tap action, source and both ends of the
+  resize range. A RemoteViews only fails when the *launcher* inflates it, so building one in a
+  test proved nothing — these actually inflate it, and they also exercise every runtime action
+  the widget performs, which catches non-remotable setters as well as illegal view classes.
+
 ## [1.0.1] — 2026-08-14
 
 ### Fixed
@@ -49,5 +68,6 @@ Initial release. **Withdrawn — crashes on launch, see 1.0.1.**
 - Backup: export your quotes as JSON, import JSON back, or paste plain
   `The quote itself — Author` lines.
 
+[1.0.2]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.2
 [1.0.1]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.1
 [1.0.0]: https://github.com/ItzSuli/Today-s-Quote/releases/tag/v1.0.0

@@ -48,11 +48,14 @@
             android:gravity="center_vertical"
             android:layout_marginTop="12dp">
 
-            <View
+            <!-- Must be an ImageView, not a View: RemoteViews will only inflate view
+                 classes annotated @RemoteView, and android.view.View is not one. -->
+            <ImageView
                 android:id="@+id/widget_accent"
                 android:layout_width="16dp"
                 android:layout_height="1dp"
                 android:layout_marginEnd="8dp"
+                android:importantForAccessibility="no"
                 android:background="#FF6E7C96" />
 
             <TextView
